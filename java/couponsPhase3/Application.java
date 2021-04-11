@@ -12,10 +12,6 @@ import couponsPhase3.threads.SessionExpirationJob;
 @SpringBootApplication
 public class Application {
 	
-	
-	// TODO read up on AspectJ
-	// TODO complete registration process
-	// TODO Monad legal input verification, maybe
 
 	public static void main(String[] args) {
 
@@ -38,32 +34,5 @@ public class Application {
 		sJob.stop();
 		cJob.stop();
 		ctx.close();
-
-//		TESTING HASH
-//		
-//		try {
-//			String s = Encrypt.SHA3_512("siteAction");
-//			System.out.println(s);
-//		} catch (NoSuchAlgorithmException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}	
-
-//		OLD TESTING
-//		
-//		ConfigurableApplicationContext ctx = SpringApplication.run(Application.class, args);
-//
-//		Test test = ctx.getBean(Test.class);
-//
-//		boolean finished = false;
-//
-//		while (!finished)
-//			try {
-//				finished = test.testAll();
-//			} catch (Exception e) {
-//				System.out.println("\nError: " + e.getMessage() + "\n");
-//				e.printStackTrace();
-//			}
-//		ctx.close();
 	}
 }
