@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left:25%;
+    overflow: hidden;
+}
+h1{
+    position: relative;
+    top: -88%;
+    left: -27%;
+    padding-left: 50%;
+    padding-right: 50%;
+    /* color: orange; */
+}
+.lds-grid {
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    height: 50%;
+    top:30%;
+    left:11%;
+  }
+  .lds-grid div {
+    position: absolute;
+    width: 4%;
+    height: 8%;
+    border-radius: 50%;
+    background: orange;
+    animation: lds-grid 1.2s linear infinite;
+  }
+  .lds-grid div:nth-child(1) {
+    top: 8%;
+    left: 8%;
+    animation-delay: 0s;
+  }
+  .lds-grid div:nth-child(2) {
+    top: 8%;
+    left: 16%;
+    animation-delay: -0.4s;
+  }
+  .lds-grid div:nth-child(3) {
+    top: 8%;
+    left: 24%;
+    animation-delay: -0.8s;
+  }
+  .lds-grid div:nth-child(4) {
+    background: transparent;
+    top: 24%;
+    left: 8%;
+    animation-delay: -0.4s;
+  }
+  .lds-grid div:nth-child(5) {
+    background: transparent;
+    top: 24%;
+    left: 16%;
+    animation-delay: -0.8s;
+  }
+  .lds-grid div:nth-child(6) {
+    background: transparent;
+    top: 24%;
+    left: 24%;
+    animation-delay: -1.2s;
+  }
+  .lds-grid div:nth-child(7) {
+    top: 40%;
+    left: 8%;
+    animation-delay: -0.8s;
+  }
+  .lds-grid div:nth-child(8) {
+    top: 40%;
+    left: 16%;
+    animation-delay: -1.2s;
+  }
+  .lds-grid div:nth-child(9) {
+    top: 40%;
+    left: 24%;
+    animation-delay: -1.6s;
+  }
+  @keyframes lds-grid {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+</style>
+</head>
+<body>
+    <div class="lds-grid">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div>
+            <h1>4</h1>
+        </div>
+        <div>
+            <h1>0</h1>
+        </div>
+        <div>
+            <h1>4</h1>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
